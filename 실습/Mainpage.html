@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>카짓의 데이터베이스</title>
+    </head>
+    <body>
+        <input type="button" value="야간모드" onclick="
+            if( this.value === '야간모드'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            this.value = '주간모드'; //document.querySelector('#id') => this 자기자신을 가리킴
+            }else{
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            this.value = '야간모드';
+            }
+        ">
+        <h1><a href ="Mainpage.html">카짓의 데이터베이스</a></h1>
+        <br>
+        <h2>미디어 컨탠츠 Top3</h2>
+        <ul>
+            <li><a href="Game.html">게임</a></li>
+            <li><a href="Movie.html">영화</a></li>
+            <li><a href="Animation.html">애니메이션</a></li>
+        </ul>
+        <br>
+        <img src="khajiit.png" width = "100%">
+    </body>
+</html>
